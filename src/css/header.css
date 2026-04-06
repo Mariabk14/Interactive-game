@@ -1,0 +1,29 @@
+.header {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  background-color: #f7faff;
+}
+
+.header-position {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 93px;
+  height: 38px;
+}
+
+.nav {
+display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.burger-btn {
+  border: none;
+  background-color: #f7faff;
+
+}
