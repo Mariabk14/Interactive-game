@@ -5,55 +5,89 @@
     <link rel="icon" type="image/svg+xml" href="/Interactive-game/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Interactive-game/assets/index-1d2304a5.js"></script>
-    <link rel="stylesheet" href="/Interactive-game/assets/index-711c0474.css">
+    <script type="module" crossorigin src="/Interactive-game/assets/index-468da3f7.js"></script>
+    <link rel="stylesheet" href="/Interactive-game/assets/index-4ad4f2ca.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
 
-    <div class="backdroup">
+    <!-- <div class="backdrop is-hidden js-backdrop">
   <div class="modal">
-    <button class="modal-close-btn" type="button">
-      <img src="../img/cross.png" alt="cross" />
-    </button>
-    <p class="">
-      Привіт! Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
-      вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам гарно
+    <button class="modal-close-btn" type="button" data-action="close-modal"></button>
+    <p class="modal-text">
+      Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
+      вам сподобається і ви отримаєте позитивні емоції! <br> Бажаємо Вам гарно
       провести час!
     </p>
     <div class="box-modal">
       <p class="box-text">Введіть своє ім’я:</p>
       <form class="modal-form">
-        <input class="form-modal-text" type="text" placeholder="Ваше ім’я..." />
-        <button class="form-modal-bth" type="submit">Зберегти</button>
+        <input class="form-text" type="text" placeholder="Ваше ім’я..." />
+        <button class="form-modal-btn" type="submit">Зберегти</button>
       </form>
     </div>
   </div>
 </div>
-
-    <selection class="header">
-    <div class="containet">
+ -->
+    <!-- <section class="header">
         <img src="../img/Logo.png" alt="logo">
-        <nav class="">
-            <ul class="">
-                <li class="">Інтерактив
-                    <select class="">
-                        <option class="" value="numerical">Числовий</option>
-                        <option class="" value="game">Ігровий</option>
-                        <option class="" value="introductory">Ознайомчий</option>
-                        <option value="all">Всі Ігри</option>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu-title">Інтерактив
+                    <select class="option-list">
+                        <option class="option-title" value="numerical">Числовий</option>
+                        <option class="option-title" value="game">Ігровий</option>
+                        <option class="option-title" value="introductory">Ознайомчий</option>
+                        <option class="option-title" value="all">Всі Ігри</option>
                     </select>
                 </li>
-                <li class="">Наша команда</li>
-                <li class="">Контакти</li>
+                <li class="menu-title">Наша команда</li>
+                <li class="menu-title">Контакти</li>
             </ul>
         </nav>
-        <div>
-            
+        <div class="user-accaunt">
+            <button class="background-change" type="button"> 
+                <img src="../img/Sun-btn.png" alt="Sun-btn">
+            </button>
+            <p class="user-nam"></p>
+        </div>
+</section> -->
+     <section class="section">
+     <div class="container">
+        <h1 class="first-title">Популярні інетрактивні ігри</h1>
+  <div class="box-age">
+        <h2 class="all-title">Перевір в який рік ти народився</h2>
+            <form class="form-age">
+                <input class="form-age-text" placeholder="Введіть рік народження" type="number"/> 
+                <button class="form-age-btn"> <img src="../img/dandruff.png"></button> 
+                <p class="form-computer-text">Ви народилися у високосний рік!</p>
+            </form>
         </div>
     </div>
-</selection>
+</section> 
+   
+     <section class="section">
+    <div class="container" id="number">
+    </div>
+</section>
+     <section class="section">
+    <div class="container">
+        <h2 class="all-title">Камінь - ножиці - папір</h2>
+        <div class="game">
+            <button class="button-game" type="button"> <img src="" alt="">  </button> 
+            <button class="button-game" type="button"> <img src="" alt="">  </button> 
+            <button class="button-game" type="button"> <img src="" alt="">  </button> 
+        </div>
+        <p class="game-text">Ви виграли раунд!</p>
+    </div>
+    <div class="score">
+        <p class="score-text">Рахунок:</p>
+        <p class="score-text">Комп’ютер -</p>
+        <p class="score-text">Ви -</p>
+    </div>
+</section>
 
     
   </body>
