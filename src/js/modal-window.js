@@ -1,3 +1,4 @@
+window.addEventListener("load")
 
 const refs = {
   closeModalBth: document.querySelector("[data-action='close-modal']"),
@@ -6,6 +7,10 @@ const refs = {
 
 refs.closeModalBth.addEventListener('click', onCloseModalClick);
 refs.backdrop.addEventListener('click', onBackdropClick);
+
+function load (){
+ document.body.classList.add('show-modal');
+}
 
 function onCloseModalClick() {
   window.removeEventListener('keydown', onEscapeKeyPress);

@@ -1,0 +1,31 @@
+.first-title{
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #000;
+padding-bottom: 36px;
+border-bottom: 1px solid black;
+}
+
+.all-title{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    
+}
+
+.box-age{
+
+}
+
+.form-age{
+position: relative;
+}
+
+.form-age-btn{
+    position: absolute;
+
+    border-radius: 0 20px 20px 0;
+}

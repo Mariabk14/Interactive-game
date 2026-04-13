@@ -5,7 +5,11 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./body.css');
 @import url('./header.css');
+@import url('./modal-window.css');
+@import url('./birthday.css');
+
 /* @import url('./vite-promo.css'); */
 
 :root {
@@ -23,3 +27,5 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+

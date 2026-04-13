@@ -1,0 +1,21 @@
+body{
+    width: 1440px;
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section{
+    padding-top: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid black;
+}
