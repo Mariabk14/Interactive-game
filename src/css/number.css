@@ -1,0 +1,29 @@
+.number-text{
+    position: relative;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+color: #7e7e7e;
+border-radius: 20px;
+padding: 10px 45px 10px 10px;
+width: 150px;
+height: 35px;
+}
+.number-btn {
+    position: absolute;
+    border-radius: 0 20px 20px 0;
+fill: #000;
+}
+
+.number-result{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+text-align: right;
+}
+.green{
+color: #039900;
+}
+.red{
+   color: #900; 
+}

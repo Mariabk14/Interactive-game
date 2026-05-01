@@ -3,6 +3,7 @@ console.log(numberContainer)
 
 const allTitle = document.createElement("h2")
 allTitle.textContent = 'Вгадай число, яке загадав комп’ютер';
+allTitle.classList.add("all-title")
 
 console.log(allTitle)
 
@@ -23,7 +24,6 @@ console.log(numberImage)
 
 const numberResult = document.createElement("p")
 numberResult.classList.add("number-result")
-numberResult.textContent = 'Вітаю, ви вгадали число! (number) ';
 console.log(numberResult)
 
 
@@ -33,3 +33,26 @@ numberForm.appendChild(numberText)
 numberForm.appendChild(numberBtn)
 numberBtn.appendChild(numberImage)
 numberContainer.appendChild(numberResult)
+
+
+// const randomNumber = Math.round(Math.random() * 10)
+ const min = 0;
+const max = 100;
+const randomNumber = Math.round (Math.random() * (max - min) + min);
+console.log(randomNumber);
+
+numberForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    // console.log(typeof numberText.value)
+    const userNumber = parseInt(numberText.value)
+    console.log(userNumber)
+
+    if (randomNumber === userNumber) {
+        numberResult.textContent = `Вітаю, ви вгадали число ${randomNumber}!`;
+        numberResult.style.color = '#039900';
+    } else {
+        numberResult.textContent = `Ви програли, комп’ютер загадав ${randomNumber}!`;
+        numberResult.style.color = "#900";
+    }
+
+})

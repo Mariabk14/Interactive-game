@@ -1,0 +1,18 @@
+.button-game{
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: transparent;
+}
+.game-text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+
+}
+.score-text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 170%;
+color: #000;
+}
