@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Interactive-game/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Interecrive Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Interactive-game/assets/index-468da3f7.js"></script>
-    <link rel="stylesheet" href="/Interactive-game/assets/index-4ad4f2ca.css">
+    <script type="module" crossorigin src="/Interactive-game/assets/index-7845a580.js"></script>
+    <link rel="stylesheet" href="/Interactive-game/assets/index-93fda89f.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -31,8 +34,8 @@
   </div>
 </div>
  -->
-    <!-- <section class="header">
-        <img src="../img/Logo.png" alt="logo">
+    <section class="header">
+        <img src="../img/Logo.png" alt="logo" class="logo">
         <nav class="nav">
             <ul class="menu">
                 <li class="menu-title">Інтерактив
@@ -53,40 +56,185 @@
             </button>
             <p class="user-nam"></p>
         </div>
-</section> -->
-     <section class="section">
+</section>
+     <section class="section birthday" id="1">
      <div class="container">
         <h1 class="first-title">Популярні інетрактивні ігри</h1>
   <div class="box-age">
         <h2 class="all-title">Перевір в який рік ти народився</h2>
             <form class="form-age">
-                <input class="form-age-text" placeholder="Введіть рік народження" type="number"/> 
+                <input class="form-age-text" placeholder="Введіть рік народження" type="text"/> 
                 <button class="form-age-btn"> <img src="../img/dandruff.png"></button> 
-                <p class="form-computer-text">Ви народилися у високосний рік!</p>
+                <p class="form-computer-text"></p>
             </form>
         </div>
     </div>
 </section> 
    
-     <section class="section">
+     <section class="section" id="2">
     <div class="container" id="number">
     </div>
 </section>
-     <section class="section">
+     <section class="section" id="3">
     <div class="container">
         <h2 class="all-title">Камінь - ножиці - папір</h2>
         <div class="game">
-            <button class="button-game" type="button"> <img src="" alt="">  </button> 
-            <button class="button-game" type="button"> <img src="" alt="">  </button> 
-            <button class="button-game" type="button"> <img src="" alt="">  </button> 
+            <div class="game">
+            <button class="button-game" data-choice="rock">
+                <img src="../img/stone.png" alt="Камінь" width="60">
+            </button> 
+            <button class="button-game" data-choice="scissors">
+                <img src="../img/shears.png" alt="Ножиці" width="60">
+            </button> 
+            <button class="button-game" data-choice="paper">
+                <img src="../img/papier.png" alt="Папір" width="60">
+            </button> 
         </div>
-        <p class="game-text">Ви виграли раунд!</p>
+        <p class="game-text"></p>
     </div>
     <div class="score">
         <p class="score-text">Рахунок:</p>
-        <p class="score-text">Комп’ютер -</p>
-        <p class="score-text">Ви -</p>
+        <p class="score-text comp-score">Комп’ютер - <span id="comp-score">0</span></p></p>
+        <p class="score-text user-score">Ви - <span id="user-score">0</span></p>
     </div>
+</section>
+     <section class="section calculator" id="4">
+    <div class="container">
+        <h2 class="all-title">Калькулятор</h2>
+        <form class="">
+            <input class="number-one" placeholder="Введіть число" type="number">
+        </form>
+        <div class="calcolator-box">
+            <button class="calculator-symbol" type="button" id="plus">+</button>
+            <button class="calculator-symbol" type="button" id="multi">*</button>
+            <button class="calculator-symbol" type="button" id="minus">-</button>
+            <button class="calculator-symbol" type="button" id="divid">/</button>
+        </div>
+        <form class="">
+            <input class="number-two" placeholder="Введіть число" type="number">
+        </form>
+        <button class="calculator-symbol" type="button" id="equals">=</button>
+        <form class="">
+            <input class="calculator-result" placeholder="Результат" type="text">
+        </form>
+    </div>
+</section>
+     <section class="section time-selection" id="5">
+     <div class="container">
+  <h2 class="all-title">Калькулятор часу</h2>
+           <div class="box-time">
+            <form class="form-time-calculator">
+                <input class="form-time-text" placeholder="Введіть число" type="text"/> 
+                <button class="form-time-btn"> <img src="../img/dandruff.png"></button> 
+                <p class="form-time-result"></p>
+            </form>
+        </div>
+    </div>
+</section> 
+      <!-- <section class="section">
+    <div class="container">
+       <h2 class="all-title">Google динозавр</h2> 
+    </div>
+</section> -->
+      <!--  -->
+      <section class="section" id="8">
+    <div class="container" id="choice"></div>
+</section>
+      <!--  -->
+      <section class="section" id="10">
+    <div class="container">
+        <h2 class="all-title">Обери вченого/их</h2>
+        <div class="foto-box">
+            <div class="foto">
+            <img class="foto-img" src="../img/Albert_Einstein.jpeg" alt="Albert Einstein">
+            <p class="foto-text">Albert Einstein</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Isaac-Newton.jpeg" alt="Isaac Newton" class="foto-img">
+            <p class="foto-text">Isaac Newton</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Galileo-Galilei.jpeg" alt="Galileo Galilei" class="foto-img">
+            <p class="foto-text">Galileo Galilei</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Marie-Curie.jpeg" alt="Marie Curie" class="foto-img">
+            <p class="foto-text">Marie Curie</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Johannes-Kepler.jpeg" alt="Johannes Kepler" class="foto-img">
+            <p class="foto-text">Johannes Kepler</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Nicolaus-Copernicus.jpeg" alt="Nicolaus Copernicus" class="foto-img">
+            <p class="foto-text">Nicolaus Copernicus</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Max-Planck.jpeg" alt="Max Planck" class="foto-img">
+            <p class="foto-text">Max Planck</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Katherine-Blodgett.jpeg" alt="Katherine Blodgett" class="foto-img">
+            <p class="foto-text">Katherine Blodgett</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Ada-Lovelace.png" alt="Ada Lovelace" class="foto-img">
+            <p class="foto-text">Ada Lovelace</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Sarah-E.-Goode.jpeg" alt="Sarah E. Goode" class="foto-img">
+            <p class="foto-text">Sarah E. Goode</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Lise-Meitner.jpeg" alt="Lise Meitner" class="foto-img">
+            <p class="foto-text">Lise Meitner</p>
+            </div>
+            <div class="foto">
+            <img src="../img/Hanna-Hammarström.jpeg" alt="Hanna Hammarström" class="foto-img">
+            <p class="foto-text">Hanna Hammarström</p>
+            </div>
+        </div>
+        <div class="task-box">
+            <button class="question-button" type="button" class="task">Які вчені народилися в 19 ст.</button>
+            <button class="question-button" type="button" class="task">Відсортувати вчених за алфавітом</button>
+            <button class="question-button" type="button" class="task">Відсортувати вчених за кількістю прожитих років</button>
+            <button class="question-button" type="button" class="task">Знайти вченого, який народився найпізніше</button>
+            <button class="question-button" type="button" class="task">Знайти рік народження Albert Einshtein</button>
+            <button class="question-button" type="button" class="task">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+            <button class="question-button" type="button" class="task">Видалити всіх вчених, ім’я яких починається на “А”</button>
+            <button class="question-button" type="button" class="task">Знайти вченого, який прожив найдовше і вченого, 
+який прожив найменше</button>
+            <button class="question-button" type="button" class="task">Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+        </div>
+    </div>
+</section>
+      <section class="footer">
+        <img src="../img/Logo.png" alt="logo" class="logo-footer">
+         <ul class="contact-list">
+            <li class="contact-list-item">
+                <a href="tel:+38 (123) 456 78 90" class="contact-list-link">Tel:+38 (123) 456 78 90</a>
+            </li>
+            <li class="contact-list-item">
+                <a href="mailto:codingmagic@gmail.com" class="contact-list-link">E-Mail: codingmagic@gmail.com</a>
+            </li>
+            <li class="contact-list-item">
+                <p class="contact-list-link">Facebook: CodingMagic</p>
+            </li>
+             <li class="contact-list-item">
+                <p class="contact-list-link">Twitter: CodingMagic</p>
+            </li>
+            <li class="contact-list-item">
+                <p class="contact-list-link">Instagram: CodingMagic</p>
+            </li>
+        </ul>
+        <div class="email-box">
+           <form class="email">
+            <input class="email-input" type="text" placeholder="Ваша ел. адреса...">
+           </form>
+           <button class="email-button" type="button">Підписатись</button>
+        <small class="small-text">*Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті</small>
+    </div>
+        
 </section>
 
     
