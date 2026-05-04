@@ -5,11 +5,12 @@
 .foto-box{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
     row-gap: 36px;
     margin-bottom: 36px;
 }
 .foto{
-    width: 100%;
     flex-basis: calc((100% - 180px) /4);
     font-family: var(--font-family);
 }
@@ -17,13 +18,18 @@
  margin-top: 10px;
 font-weight: 400;
 font-size: 12px;
+padding-left: 280px;
+padding-right: 230px;
 }
 
 .foto-img{
     width: 100px;
     border-radius: 20px;
 }
-.question-button{
+.task-box{
+    flex-basis: calc((100% - 36px) / 2);
+}
+.task{
     border-radius: 20px;
 padding: 10px 20px;
 height: 35px;
@@ -34,4 +40,5 @@ font-weight: 400;
 font-size: 12px;
 text-align: right;
 color: #fff;
+
 }

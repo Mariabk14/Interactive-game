@@ -1,6 +1,7 @@
 const numberContainer = document.querySelector("#number")
 console.log(numberContainer)
 
+
 const allTitle = document.createElement("h2")
 allTitle.textContent = 'Вгадай число, яке загадав комп’ютер';
 allTitle.classList.add("all-title")
@@ -8,6 +9,7 @@ allTitle.classList.add("all-title")
 console.log(allTitle)
 
 const numberForm = document.createElement("form")
+numberForm.classList.add("number-form")
 const numberText = document.createElement("input")
 numberText.setAttribute("class","number-text")
 numberText.setAttribute("type", "number");
@@ -32,7 +34,8 @@ numberContainer.appendChild(numberForm)
 numberForm.appendChild(numberText)
 numberForm.appendChild(numberBtn)
 numberBtn.appendChild(numberImage)
-numberContainer.appendChild(numberResult)
+numberForm.appendChild(numberResult);
+// numberContainer.appendChild(numberResult)
 
 
 // const randomNumber = Math.round(Math.random() * 10)

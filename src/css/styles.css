@@ -9,6 +9,7 @@
 @import url('./header.css');
 @import url('./modal-window.css');
 @import url('./birthday.css');
+@import url('./number.css');
 @import url('./papier.css');
 @import url('./calculator.css');
 @import url('./time-calculator.css');
@@ -16,11 +17,10 @@
 @import url('./corect-answer.css');
 @import url('./footer.css');
 
-
 /* @import url('./vite-promo.css'); */
 
 :root {
-  --font-family: "Montserrat Alternates", sans-serif;
-  --second-family: "Inter", sans-serif;
-  --third-family: "Sacramento", sans-serif;
+  --font-family: 'Montserrat Alternates', sans-serif;
+  --second-family: 'Inter', sans-serif;
+  --third-family: 'Sacramento', sans-serif;
 }

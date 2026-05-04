@@ -21,8 +21,11 @@ display: block;
 }
 
 .menu {
+  padding-left: 81px;
     display: flex;
     align-items: center;
+    column-gap: 50px;
+    padding-right: 357px;
 }
 .menu-title{
     font-family: var(--font-family);
@@ -30,7 +33,9 @@ font-weight: 400;
 font-size: 12px;
 color: #000;
 }
-
+.option-list{
+  padding-right: 50px;
+}
 .burger-btn {
   border: none;
   background-color: #f7faff;

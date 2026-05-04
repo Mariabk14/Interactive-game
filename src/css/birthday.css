@@ -14,13 +14,15 @@ border-bottom: 1px solid black;
 
 .box-age{
 margin: 0 auto;
-/* display: flex;
-justify-content: center; */
 }
 
 .form-age{
 position: relative;
+
+display: flex;
+column-gap: 149px;
 }
+
 .form-age-text{
     font-family: var(--font-family);
 font-weight: 400;
@@ -34,4 +36,9 @@ height: 35px;
 .form-age-btn{
     position: absolute;
     border-radius: 0 20px 20px 0;
+    left: 180px;
+    width: 35px;
+    height: 35px;
+    background: #d7d7d7;
+    box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }

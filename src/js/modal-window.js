@@ -1,24 +1,26 @@
-window.addEventListener("load")
+document.addEventListener('DOMContentLoaded', () => {
+  
+  const refs = {
+    closeModalBth: document.querySelector("[data-action='close-modal']"),
+    backdrop: document.querySelector('.js-backdrop'),
+  };
 
-const refs = {
-  closeModalBth: document.querySelector("[data-action='close-modal']"),
-  backdrop: document.querySelector('.js-backdrop'),
-};
+  refs.closeModalBtn.addEventListener('click', onCloseModalClick);
+  refs.backdrop.addEventListener('click', onBackdropClick);
 
-refs.closeModalBth.addEventListener('click', onCloseModalClick);
-refs.backdrop.addEventListener('click', onBackdropClick);
-
-function load (){
- document.body.classList.add('show-modal');
-}
-
-function onCloseModalClick() {
-  window.removeEventListener('keydown', onEscapeKeyPress);
-  document.body.classList.remove('show-modal');
-}
-
-function onBackdropClick(e) {
-  if (e.currentTarget === e.target) {
-    onCloseModalClick();
+  function load() {
+    refs.backdrop.classList.remove('is-hidden');
   }
-}
+
+  window.addEventListener('load', load);
+
+  function onCloseModalClick() {
+    refs.backdrop.classList.add('is-hidden');
+  }
+
+  function onBackdropClick(e) {
+    if (e.currentTarget === e.target) {
+      onCloseModalClick();
+    }
+  }
+});

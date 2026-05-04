@@ -1,4 +1,4 @@
-// import "./js/modal-window.js"
+import "./js/modal-window.js"
 import './js/header.js';
 import './js/birthday.js';
 import './js/number.js';
