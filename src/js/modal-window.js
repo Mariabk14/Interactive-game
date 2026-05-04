@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
+
   const refs = {
-    closeModalBth: document.querySelector("[data-action='close-modal']"),
+    closeModalBtn: document.querySelector("[data-action='close-modal']"),
     backdrop: document.querySelector('.js-backdrop'),
   };
 
