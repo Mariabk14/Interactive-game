@@ -4,8 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     closeModalBtn: document.querySelector("[data-action='close-modal']"),
     backdrop: document.querySelector('.js-backdrop'),
   };
-
+console.log(refs.closeModalBtn)
   refs.closeModalBtn.addEventListener('click', onCloseModalClick);
+  
   refs.backdrop.addEventListener('click', onBackdropClick);
 
   function load() {
