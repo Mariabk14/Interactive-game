@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   const refs = {
-    closeModalBtn: document.querySelector("[data-action='close-modal']"),
+    closeModalBtn: document.querySelector(".modalCloseBtn"),
     backdrop: document.querySelector('.js-backdrop'),
   };
-console.log(refs.closeModalBtn)
+  console.log(refs.closeModalBtn)
+  console.log(refs.backdrop);
   refs.closeModalBtn.addEventListener('click', onCloseModalClick);
   
   refs.backdrop.addEventListener('click', onBackdropClick);
