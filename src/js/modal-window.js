@@ -11,13 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
   refs.backdrop.addEventListener('click', onBackdropClick);
 
   function load() {
-    refs.backdrop.classList.remove('is-hidden');
+    document.body.classList.add('show-modal');
   }
 
   window.addEventListener('load', load);
 
   function onCloseModalClick() {
-    refs.backdrop.classList.add('is-hidden');
+    document.body.classList.remove('show-modal');
   }
 
   function onBackdropClick(e) {

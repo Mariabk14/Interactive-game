@@ -3,8 +3,12 @@
     column-gap: 202px;
 }
 
+.number-form{
+position: relative;
+}
+
 .number-text{
-    position: relative;
+    
     font-family: var(--font-family);
 font-weight: 400;
 font-size: 12px;
@@ -17,7 +21,8 @@ height: 35px;
 .number-btn {
     position: absolute;
     border-radius: 0 20px 20px 0;
-    left: 467px;
+    top: 0;
+    right: 0;
     width: 35px;
     height: 35px;
     color: #000;
