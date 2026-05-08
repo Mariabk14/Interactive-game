@@ -1,5 +1,10 @@
-
-.number-choice{
+.form-choise{
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    
+}
+.nummber-choice{
     border-radius: 20px;
 padding: 10px 20px;
 width: 135px;
@@ -16,4 +21,6 @@ color: #7e7e7e;
 font-weight: 400;
 font-size: 12px;
 color: #000;
+margin-top: 36px;
+text-align: center;
 }
