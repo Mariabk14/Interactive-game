@@ -8,6 +8,7 @@ allTitle.classList.add('all-title')
 console.log(allTitle)
 
 const form = document.createElement("form")
+form.classList.add('form-choise')
 const  numberOne = document.createElement("input");
 numberOne.classList.add('nummber-choice')
 numberOne.setAttribute('type', 'number');
