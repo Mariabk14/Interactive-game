@@ -63,11 +63,19 @@ color: #000;
 
 .box-modal{
 margin-top: 42px;
+
+background-image: url(../img/game-development.png), url(../img/sword.png);
+background-position:
+    right 21px bottom 80px,
+    left 21px bottom 80px;
+    background-repeat: no-repeat;
 }
 
 .box-text{
 text-align: center;
 color: #000;
+
+
 }
 
 .modal-form{
@@ -75,8 +83,12 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 row-gap: 18px;
- background-image: url(../img/puzzle.png), url(../img/game-development.png), url(../img/sword.png);
+ background-image: url(../img/puzzle.png), url(../img/tic-tac-toe.png);
 background-repeat: no-repeat;
+
+background-position:
+    left 70px bottom 0,  
+    right 70px bottom 0;
 
 }
 
