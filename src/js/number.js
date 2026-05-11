@@ -1,3 +1,5 @@
+import dandruff from "../img/dandruff.png"
+
 const numberContainer = document.querySelector("#number")
 console.log(numberContainer)
 
@@ -19,7 +21,7 @@ const numberBtn = document.createElement("button")
 numberBtn.setAttribute('type','button')
 numberBtn.setAttribute('class', 'number-btn');
 const numberImage = document.createElement("img")
-numberImage.src = '../img/dandruff.png'
+numberImage.src = dandruff
 numberImage.alt = 'dandruff'
 numberImage.width = '15'
 console.log(numberImage)
