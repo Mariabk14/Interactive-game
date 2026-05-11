@@ -16,12 +16,10 @@
 .foto-text{
  margin-top: 10px;
 font-weight: 400;
-padding-left: 280px;
-padding-right: 230px;
+text-align: center;
 }
 
 .foto-img{
-    width: 100px;
     border-radius: 20px;
 }
 .task-box{
