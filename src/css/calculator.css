@@ -1,6 +1,7 @@
 .calculator-container{
     display: flex;
     column-gap: 38px;
+    justify-content: center;
 }
 
 .number{

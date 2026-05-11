@@ -1,9 +1,25 @@
+.papier-game{
+    display: flex;
+    column-gap: 104px;
+    justify-content: center;
+}
+.game{
+    margin-left: 100px;
+}
 .button-game{
     border-radius: 20px;
     background-color: transparent;
     border-color: transparent;
 }
+.game-text{
+    margin-top: 36px;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+margin-left: 100px;
+}
 .score-text{
 line-height: 170%;
 color: #000;
 }
+
