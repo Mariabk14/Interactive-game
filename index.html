@@ -10,23 +10,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <script type="module" crossorigin src="/Interactive-game/assets/index-4f01b64e.js"></script>
-    <link rel="stylesheet" href="/Interactive-game/assets/index-61096c8d.css">
+    <script type="module" crossorigin src="/Interactive-game/assets/index-914704cc.js"></script>
+    <link rel="stylesheet" href="/Interactive-game/assets/index-adfd6758.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
 
     <div class="backdrop is-hidden js-backdrop">
   <div class="modal">
-    <button class="modalCloseBtn" type="button" data-action="close-modal"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAH9JREFUeAGdksENgCAMRRtdwBEcASdxFTdwJOfx5NWbjmBJagIB2n5IfiAk7wXajkR0cE7OTdjaOUs8BM4lOwJHZv4vEEkBI5Im7JGYsCZxwzUJDKeSx4IHRbByXjlPBK702fCc1P7slmgFMyWeajclSKsKSU+fM8lGHUMicPgAXa4oX/7gSKUAAAAASUVORK5CYII="></button>
+    <button class="modalCloseBtn" type="button" data-action="close-modal">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAH9JREFUeAGdksENgCAMRRtdwBEcASdxFTdwJOfx5NWbjmBJagIB2n5IfiAk7wXajkR0cE7OTdjaOUs8BM4lOwJHZv4vEEkBI5Im7JGYsCZxwzUJDKeSx4IHRbByXjlPBK702fCc1P7slmgFMyWeajclSKsKSU+fM8lGHUMicPgAXa4oX/7gSKUAAAAASUVORK5CYII=" />
+    </button>
     <p class="modal-text">
-      Привіт! <br> Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
-      вам сподобається і ви отримаєте позитивні емоції! <br> Бажаємо Вам гарно
-      провести час!
+      Привіт! <br />
+      Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що вам
+      сподобається і ви отримаєте позитивні емоції! <br />
+      Бажаємо Вам гарно провести час!
     </p>
     <div class="box-modal">
       <p class="box-text">Введіть своє ім’я:</p>
-      <form class="modal-form">
+      <form class="modal-form js-modal-form">
         <input class="form-text" type="text" placeholder="Ваше ім’я..." />
         <button class="form-modal-btn" type="submit">Зберегти</button>
       </form>
@@ -39,12 +42,12 @@
         <nav class="nav">
             <ul class="menu">
                 <li class="menu-title">Інтерактив
-                    <select class="option-list">
-                        <option class="option-title" value="numerical">Числовий</option>
-                        <option class="option-title" value="game">Ігровий</option>
-                        <option class="option-title" value="introductory">Ознайомчий</option>
-                        <option class="option-title" value="all">Всі Ігри</option>
-                    </select>
+                    <div class="option-list">
+                        <a href="#" class="option-title" value="numerical" data-filter="numerical">Числовий</a>
+                        <a href="#" class="option-title" value="game" data-filter="game">Ігровий</a>
+                        <a href="#" class="option-title" value="acquaintance" data-filter="acquaintance">Ознайомчий</a>
+                        <a href="#" class="option-title" value="all" data-filter="all">Всі Ігри</a>
+                    </div>
                 </li>
                 <li class="menu-title">Наша команда</li>
                 <li class="menu-title">Контакти</li>
@@ -52,25 +55,32 @@
         </nav>
         <div class="user-accaunt">
             <button class="background-change" type="button"> 
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAOlJREFUeAGdkz0KwkAQhcefSrAQexEbQRAETyB4Bc+glYWNWBm9gK3YeAdLRTyEjZWt2CgiWPn3hp2RsGaTkAcfZHcybzKzWaJwfUCKEsoTg1XchIskdB3xFriBq8tgJgZZsJRnxQMZ8AZTl0GaTL8vK1l5iflfkordx9ae/W4/KMBVd6DmqOyHi5TA1m+gwUIMA52RtvTruwya4EjheoA2aFDAPFiViOp1O8E/sJz0N6Fg6X7VEacNmSH1ZL0AJ7AGeTI/Eve9d31BEXTAXNZnMAAHcCdzUiPwpJjiitz3kBKKT8ejiNv4BUsoSdI+yNA5AAAAAElFTkSuQmCC" alt="Sun-btn">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAOlJREFUeAGdkz0KwkAQhcefSrAQexEbQRAETyB4Bc+glYWNWBm9gK3YeAdLRTyEjZWt2CgiWPn3hp2RsGaTkAcfZHcybzKzWaJwfUCKEsoTg1XchIskdB3xFriBq8tgJgZZsJRnxQMZ8AZTl0GaTL8vK1l5iflfkordx9ae/W4/KMBVd6DmqOyHi5TA1m+gwUIMA52RtvTruwya4EjheoA2aFDAPFiViOp1O8E/sJz0N6Fg6X7VEacNmSH1ZL0AJ7AGeTI/Eve9d31BEXTAXNZnMAAHcCdzUiPwpJjiitz3kBKKT8ejiNv4BUsoSdI+yNA5AAAAAElFTkSuQmCC" alt="Sun-btn" class="background-change-icon">
             </button>
-            <p class="user-nam"></p>
+            <p class="user-name"></p>
         </div>
 </section>
      <section class="section birthday" id="1">
-     <div class="container">
-        <h1 class="first-title">Популярні інетрактивні ігри</h1>
-  <div class="box-age">
-        <h2 class="all-title">Перевір в який рік ти народився</h2>
-            <form class="form-age">
-                <input class="form-age-text" placeholder="Введіть рік народження" type="text"/> 
-                <button class="form-age-btn"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAMNJREFUeAG1UgERwjAMDCiYhEpAwiQgoRJwQB0MB+BgEooEHEzCcBCSkd6FXpbuuNvf5a5tPv9NGwAFROwpRooZv5hlf4YWiDSgj2FLMTsmiiDngeKibnS3intVfFoxCEqkr5OjJBL4LSbh5TpRlENDoCs3rRMLYAMs7pHiLcnQKO6scxZ4yTqCjzILz1pZ/0IA251/YRJetAgPJRLVHPDDXfF3Mk0TJt/QRxGZPBF2z5VjljZ1G+siHnYROcAfEOdlpD+ATYXj89HyRAAAAABJRU5ErkJggg==" alt="dandruff"></button> 
-                <p class="form-computer-text"></p>
-            </form>
-        </div>
+  <div class="container">
+    <h1 class="first-title">Популярні інетрактивні ігри</h1>
+    <div class="box-age">
+      <h2 class="all-title">Перевір в який рік ти народився</h2>
+      <form class="form-age">
+        <input
+          class="form-age-text"
+          placeholder="Введіть рік народження"
+          type="text"
+        />
+        <button class="form-age-btn">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAMNJREFUeAG1UgERwjAMDCiYhEpAwiQgoRJwQB0MB+BgEooEHEzCcBCSkd6FXpbuuNvf5a5tPv9NGwAFROwpRooZv5hlf4YWiDSgj2FLMTsmiiDngeKibnS3intVfFoxCEqkr5OjJBL4LSbh5TpRlENDoCs3rRMLYAMs7pHiLcnQKO6scxZ4yTqCjzILz1pZ/0IA251/YRJetAgPJRLVHPDDXfF3Mk0TJt/QRxGZPBF2z5VjljZ1G+siHnYROcAfEOdlpD+ATYXj89HyRAAAAABJRU5ErkJggg==" alt="dandruff" />
+        </button>
+        <p class="form-computer-text"></p>
+      </form>
     </div>
-</section> 
-   
+    <div class="line"></div>
+  </div>
+</section>
+
      <section class="section" id="2">
     <div class="container" id="number">
     </div>
@@ -99,13 +109,15 @@
         <p class="score-text user-score">Ви - <span id="user-score">0</span></p>
     </div>
     </div>
+    <div class="line"></div>
+    </div>
 </section>
      <section class="section calculator" id="4">
     <div class="container">
         <h2 class="all-title">Калькулятор</h2>
         <div class="calculator-container">
         <form class="calculator-form">
-            <input class="number-one number" placeholder="Введіть число" type="number">
+            <input class="number-one number" placeholder="Введіть число" type="text">
         </form>
         <div class="calculator-box">
             <button class="calculator-symbol" type="button" id="plus">+</button>
@@ -114,13 +126,14 @@
             <button class="calculator-symbol" type="button" id="divid">/</button>
         </div>
         <form class="">
-            <input class="number-two number" placeholder="Введіть число" type="number">
+            <input class="number-two number" placeholder="Введіть число" type="text">
         </form>
         <button class="calculator-symbol" type="button" id="equals">=</button>
         <form class="">
             <input class="calculator-result" placeholder="Результат" type="text">
         </form>
     </div>
+    <div class="line"></div>
     </div>
 </section>
      <section class="section time-selection" id="5">
@@ -130,9 +143,10 @@
             <form class="form-time-calculator">
                 <input class="form-time-text" placeholder="Введіть число" type="text"/> 
                 <button class="form-time-btn"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAMNJREFUeAG1UgERwjAMDCiYhEpAwiQgoRJwQB0MB+BgEooEHEzCcBCSkd6FXpbuuNvf5a5tPv9NGwAFROwpRooZv5hlf4YWiDSgj2FLMTsmiiDngeKibnS3intVfFoxCEqkr5OjJBL4LSbh5TpRlENDoCs3rRMLYAMs7pHiLcnQKO6scxZ4yTqCjzILz1pZ/0IA251/YRJetAgPJRLVHPDDXfF3Mk0TJt/QRxGZPBF2z5VjljZ1G+siHnYROcAfEOdlpD+ATYXj89HyRAAAAABJRU5ErkJggg=="></button> 
-                <p class="form-time-result"></p>
-            </form>
+               </form> 
+               <p class="form-time-result"></p>
         </div>
+        <div class="line"></div>
     </div>
 </section> 
       <!-- <section class="section">
@@ -240,6 +254,14 @@
     </div>
         
 </section>
+      <div class="backdrop-footer is-hidden-footer" data-modal>
+  <div class="footer-modal">
+    <button class="modal-close-footer" data-close-modal>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAH9JREFUeAGdksENgCAMRRtdwBEcASdxFTdwJOfx5NWbjmBJagIB2n5IfiAk7wXajkR0cE7OTdjaOUs8BM4lOwJHZv4vEEkBI5Im7JGYsCZxwzUJDKeSx4IHRbByXjlPBK702fCc1P7slmgFMyWeajclSKsKSU+fM8lGHUMicPgAXa4oX/7gSKUAAAAASUVORK5CYII="/>
+    </button>
+    <h2>Дякую за підписку!</h2>
+  </div>
+</div>
 
     
   </body>
