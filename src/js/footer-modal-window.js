@@ -19,15 +19,12 @@ function onOpenModalClick() {
   }
 
   refs.backdrop.classList.remove('is-hidden-footer');
-
   window.addEventListener('keydown', onEscapeKeyPress);
-
   refs.form.reset();
 }
 
 function onCloseModalClick() {
   refs.backdrop.classList.add('is-hidden-footer');
-
   window.removeEventListener('keydown', onEscapeKeyPress);
 }
 

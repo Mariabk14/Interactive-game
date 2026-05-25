@@ -18,10 +18,7 @@ color: #000;
 .email-box{
     display: flex;
     column-gap: 36px;
-    padding-right: 175px;
     padding-left: 185px;
-    width: 347px;
-height: 60px;
 }
 .email-input{
     position: relative;
@@ -33,6 +30,7 @@ color: #7e7e7e;
 background: #d7d7d7;
 }
 .email-button{
+margin-left: 36px;
 color: #fff;
 border-radius: 20px;
 padding: 10px;
