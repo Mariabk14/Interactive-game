@@ -30,6 +30,9 @@ const numberResult = document.createElement("p")
 numberResult.classList.add("number-result")
 console.log(numberResult)
 
+const bottomLine = document.createElement("div")
+bottomLine.classList.add("line")
+
 
 numberContainer.appendChild(allTitle)
 numberContainer.appendChild(numberForm)
@@ -37,7 +40,7 @@ numberForm.appendChild(numberText)
 numberForm.appendChild(numberBtn)
 numberBtn.appendChild(numberImage)
 numberForm.appendChild(numberResult);
-// numberContainer.appendChild(numberResult)
+numberContainer.appendChild(bottomLine)
 
 
 // const randomNumber = Math.round(Math.random() * 10)

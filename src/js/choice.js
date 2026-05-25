@@ -28,12 +28,16 @@ const numberText = document.createElement("p")
 numberText.classList.add('number-text-choice')
 numberText.textContent = '';
 
+const bottomLine = document.createElement('div');
+bottomLine.classList.add('line');
+
 choiceContainer.appendChild(allTitle)
 choiceContainer.appendChild(form)
 form.appendChild(numberOne)
 form.appendChild(numberTwo);
 form.appendChild(numberThree);
 choiceContainer.appendChild(numberText)
+choiceContainer.appendChild(bottomLine);
 
 const refs = {
   inputs: document.querySelectorAll(".nummber-choice"),

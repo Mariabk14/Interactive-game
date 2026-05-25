@@ -3,6 +3,9 @@
 }
 .box-time{
 display: flex;
+width: 392px;
+margin: 0 auto;
+column-gap: 165px;
 }
 
 .form-time-calculator{
@@ -25,8 +28,8 @@ background: #d7d7d7;
 background-color: #000;
 width: 35px;
 height: 35px;
-
 }
+
 .form-time-result{
 color: #000;
 }

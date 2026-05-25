@@ -1,8 +1,8 @@
 const refs = {
     buttons : document.querySelectorAll('.button-game'),
  resultText : document.querySelector('.game-text'),
- compScoreEl : document.getElementById('.comp-score'),
- userScoreEl : document.getElementById('.user-score'),
+ compScoreEl : document.getElementById('comp-score'),
+ userScoreEl : document.getElementById('user-score'),
 }
 
 
@@ -47,7 +47,7 @@ refs.buttons.forEach(button => {
       refs.resultText.textContent = `Нічия! (${userChoice} = ${computerChoice})`;
     }
 
-    refs.compScoreEl.textContent = compScore;
     refs.userScoreEl.textContent = userScore;
+    refs.compScoreEl.textContent = compScore;
   });
 });

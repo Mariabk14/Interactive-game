@@ -25,24 +25,9 @@ const games = [
     category: 'numerical',
   },
   {
-    id: 6,
-    name: 'Google динозаврик',
-    category: 'game',
-  },
-  {
-    id: 7,
-    name: 'Футбол',
-    category: 'game',
-  },
-  {
     id: 8,
     name: 'Найбільше число',
     category: 'numerical',
-  },
-  {
-    id: 9,
-    name: 'Наша команда',
-    category: 'acquaintance',
   },
   {
     id: 10,
@@ -50,3 +35,38 @@ const games = [
     category: 'acquaintance',
   },
 ];
+document.addEventListener("DOMContentLoaded", () => {
+  const options = document.querySelectorAll("[data-filter]")
+  const sections = document.querySelectorAll("section[id]")
+
+  // console.log(options)
+  // console.log(sections)
+
+  const groups = {
+    numerical: ["1","2","4","5","8"],
+    game: ["3"],
+    acquaintance: ["10"],
+    all: ["1", "2", "3","4", "5", "8", "10"]
+  };
+  
+  options.forEach(option => {
+    // console.log(option)
+    option.addEventListener("click", (event) => {
+      event.preventDefault()
+    const filter = option.dataset.filter
+
+    const allowed = groups[filter]
+    
+    sections.forEach(section => {
+      const id = section.id
+      if (allowed.includes(id)) {
+        section.style.display = "block"
+      } else {
+         section.style.display = 'none';
+      }
+    })
+  })
+});
+})
+
+

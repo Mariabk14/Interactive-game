@@ -12,10 +12,9 @@ body{
 }
 
 .section{
-    padding-top: 36px;
-    padding-bottom: 36px;
-    border-bottom: 1px solid black; 
-     background: #fff;
+    /* padding-top: 36px;
+    padding-bottom: 36px; */
+    background: #fff;
 }
 
 .container{
@@ -40,9 +39,11 @@ padding-top: 36px;
     padding-bottom: 36px;
 }
 
-/* .green{
-color: #039900;
+.line{
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
 }
-.red{
-   color: #900; 
-} */

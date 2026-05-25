@@ -3,12 +3,12 @@
         <nav class="nav">
             <ul class="menu">
                 <li class="menu-title">Інтерактив
-                    <select class="option-list">
-                        <option class="option-title" value="numerical">Числовий</option>
-                        <option class="option-title" value="game">Ігровий</option>
-                        <option class="option-title" value="introductory">Ознайомчий</option>
-                        <option class="option-title" value="all">Всі Ігри</option>
-                    </select>
+                    <div class="option-list">
+                        <a href="#" class="option-title" value="numerical" data-filter="numerical">Числовий</a>
+                        <a href="#" class="option-title" value="game" data-filter="game">Ігровий</a>
+                        <a href="#" class="option-title" value="acquaintance" data-filter="acquaintance">Ознайомчий</a>
+                        <a href="#" class="option-title" value="all" data-filter="all">Всі Ігри</a>
+                    </div>
                 </li>
                 <li class="menu-title">Наша команда</li>
                 <li class="menu-title">Контакти</li>
@@ -16,8 +16,8 @@
         </nav>
         <div class="user-accaunt">
             <button class="background-change" type="button"> 
-                <img src="./img/Sun-btn.png" alt="Sun-btn">
+                <img src="./img/Sun-btn.png" alt="Sun-btn" class="background-change-icon">
             </button>
-            <p class="user-nam"></p>
+            <p class="user-name"></p>
         </div>
 </section>

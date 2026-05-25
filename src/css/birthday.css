@@ -6,7 +6,10 @@
 font-size: 24px;
 color: #000;
 padding-bottom: 36px;
+padding-top: 36px;
 border-bottom: 1px solid black;
+width: 536px;
+
 }
 
 
@@ -17,7 +20,9 @@ margin: 0 auto;
 
 .form-age{
 position: relative;
-/* width: 215px; */
+width: 594px;
+margin: 0 auto;
+align-items: center;
 
 display: flex;
 column-gap: 149px;
@@ -41,3 +46,4 @@ background: #d7d7d7;
     background: #000;
     box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
+

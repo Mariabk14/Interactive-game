@@ -7,3 +7,4 @@ import './js/choice.js';
 import './js/calculator.js';
 import './js/time-calculator.js';
 import './js/corect-answer.js';
+import './js/footer-modal-window.js';
