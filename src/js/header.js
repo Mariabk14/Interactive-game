@@ -72,28 +72,25 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 })
 const btn = document.querySelector('.background-change');
-const icon = document.querySelector('.background-sun-icon');
+// const icon = document.querySelector('.background-change::after');
 const sections = document.querySelectorAll(".section")
+const header = document.querySelector(".header")
+const footer = document.querySelector(".footer")
 
-console.log(icon)
 btn.addEventListener('click', () => {
   btn.classList.toggle('background-change-dark');
-  console.log(icon)
 
   if (btn.classList.contains('background-change-dark')) {
-    console.log(icon);
-    icon.style.display = "none"
-    
+    // icon.style.display = "none"
     sections.forEach(section => section.style.backgroundColor = 'gray');
-
-
+    header.style.backgroundColor = "gray"
+    footer.style.backgroundColor = 'gray';
   } else {
     sections.forEach(section => (section.style.backgroundColor = 'white'));
-    // icon.src = "../img/Sun-btn.png";
+    header.style.backgroundColor = 'white';
+    footer.style.backgroundColor = 'white';
+
   }
-  // btn.classList.contains('background-change-dark')
-  //   ? icon.setAttribute('src', dark)
-  //   : icon.setAttribute("src", light);
   
 });
 

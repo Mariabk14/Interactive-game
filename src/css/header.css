@@ -67,6 +67,7 @@ left: -40px;
     border: none;
     position: relative;
     cursor: pointer;
+    border: 1px solid #211f1f;
 }
 
 .background-change::after {
@@ -81,9 +82,7 @@ left: -40px;
     transition: transform 0.3s ease;
 }
 .background-change-dark{
-  background-image: url(../img/Moon-btn.png);
-  background-repeat: no-repeat;
-  background-position: 20px;
+  background-color: #7a7a7a;
 }
 .background-sun-icon {
     position: absolute;
@@ -94,13 +93,27 @@ left: -40px;
     z-index: 2;
     transition: transform 0.3s ease;
 }
+.background-moon-icon{
+  display: none;
+  position: absolute;
+    top: 5px;
+    right: 5px; 
+    width: 10px;
+    height: 10px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
 
 .background-change-dark::after {
     transform: translateX(20px);
+    background-color: #000;
 }
 
 .background-change-dark .background-sun-icon {
-    transform: translateX(20px);
+    display: none;
+}
+.background-change-dark .background-moon-icon {
+    display: block;
 }
 
 .burger-btn {
