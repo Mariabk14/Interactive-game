@@ -106,15 +106,13 @@ refs.buttons[1].addEventListener("click", () => {
   const res = [...scientists].sort((a, b) => 
     a.surname.localeCompare(b.surname)
   );
-  console.log(res);
   highlight(res);
 });
 
 refs.buttons[2].addEventListener('click', () => {
   const res = [...scientists].sort(
     (a, b) => b.dead - b.born - (a.dead - a.born)
-  );
-  console.log(res);
+  )
   highlight(res);
 });
 

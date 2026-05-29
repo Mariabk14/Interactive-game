@@ -11,9 +11,6 @@ const refs = {
   
 document.addEventListener('DOMContentLoaded', () => {
 
-  console.log(refs.closeModalBtn)
-  console.log(refs.backdrop);
-console.log(refs.jsFormModal);
   refs.closeModalBtn.addEventListener('click', onCloseModalClick);
   
   refs.backdrop.addEventListener('click', onBackdropClick);
@@ -34,14 +31,12 @@ console.log(refs.jsFormModal);
     }
   }
 
-  console.log(refs.jsFormModal)
 refs.jsFormModal.addEventListener("submit", onInputChange)
  
 function onInputChange(event) {
   event.preventDefault()
-  console.log(refs.formText)
+
   savedUserName = refs.formText.value
-  console.log(savedUserName)
   if (savedUserName) {
     refs.userName.textContent = `Вітаємо, ${savedUserName}!`;
     document.body.classList.remove('show-modal');

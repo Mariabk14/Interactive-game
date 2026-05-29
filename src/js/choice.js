@@ -1,11 +1,9 @@
 const choiceContainer = document.querySelector('#choice');
-console.log(choiceContainer);
 
 const allTitle = document.createElement('h2');
 allTitle.textContent = 'Введіть 3 числа';
 allTitle.classList.add('all-title')
 
-console.log(allTitle)
 
 const form = document.createElement("form")
 form.classList.add('form-choise')

@@ -7,8 +7,6 @@ const refs = {
 refs.timeSecond.addEventListener("submit", function (e) {
     e.preventDefault();
     const seconds = parseInt(refs.timeText.value);
-    console.log(refs.timeText)
-    console.log(seconds);
     if (isNaN(seconds) || seconds < 0) {
       refs.result.textContent = alert('Будь ласка, введіть коректне число');
       return;
@@ -18,5 +16,5 @@ refs.timeSecond.addEventListener("submit", function (e) {
     const minutes = Math.floor((seconds % 3600) / 60 )
     const remainingSecond = seconds % 60;
     
-    refs.result.textContent = `${days} days ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${remainingSecond.toString().padStart(2, '0')}`;
+    refs.result.textContent = `${days} дн. ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${remainingSecond.toString().padStart(2, '0')}`;
 });

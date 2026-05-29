@@ -41,18 +41,3 @@ refs.equals.addEventListener("click", () => {
         alert('Choose correct operation first!')
     }
 })
-
-// function calculator (number1, number2 ){
-//   switch (refs.operator) {
-//     case '+' (refs.plus):
-//       return refs.number1 + refs.number2;
-//     case '-':
-//       return refs.number1 - refs.number2;
-//     case '*':
-//       return refs.number1 * refs.number2;
-//     case '/':
-//       return b !== 0 ? refs.number1 / refs.number2 : 'Cannot divide by zero';
-//     default:
-//       return 'Invalid operator';
-//   }
-// }

@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const options = document.querySelectorAll("[data-filter]")
   const sections = document.querySelectorAll("section[id]")
 
-  // console.log(options)
-  // console.log(sections)
 
   const groups = {
     numerical: ["1","2","4","5","8"],
@@ -53,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   
   options.forEach(option => {
-    // console.log(option)
     option.addEventListener("click", (event) => {
       event.preventDefault()
     const filter = option.dataset.filter
@@ -72,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 })
 const btn = document.querySelector('.background-change');
-// const icon = document.querySelector('.background-change::after');
+
 const sections = document.querySelectorAll(".section")
 const header = document.querySelector(".header")
 const footer = document.querySelector(".footer")
@@ -81,7 +78,6 @@ btn.addEventListener('click', () => {
   btn.classList.toggle('background-change-dark');
 
   if (btn.classList.contains('background-change-dark')) {
-    // icon.style.display = "none"
     sections.forEach(section => section.style.backgroundColor = 'gray');
     header.style.backgroundColor = "gray"
     footer.style.backgroundColor = 'gray';
@@ -89,7 +85,6 @@ btn.addEventListener('click', () => {
     sections.forEach(section => (section.style.backgroundColor = 'white'));
     header.style.backgroundColor = 'white';
     footer.style.backgroundColor = 'white';
-
   }
   
 });
