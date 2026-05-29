@@ -16,12 +16,9 @@ line-height: 170%;
 color: #000;
 }
 .email-box{
-    display: flex;
-    column-gap: 36px;
     padding-left: 185px;
 }
 .email-input{
-    position: relative;
     border-radius: 20px;
 padding: 10px 80px 10px 10px;
 width: 204px;
@@ -39,8 +36,8 @@ height: 35px;
 background: #000;
 }
 .small-text{
-    position: absolute;
+    display: block;
+    margin-top: 18px;
 font-size: 6px;
-padding-top: 60px;
 color: #000;
 }

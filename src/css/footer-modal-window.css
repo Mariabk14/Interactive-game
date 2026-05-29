@@ -7,12 +7,42 @@
 .backdrop-footer {
   position: fixed;
   inset: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   background: rgba(0, 0, 0, 0.5);
-
   transition: opacity 250ms ease;
+}
+
+.footer-modal{
+    padding: 30px;
+    background-color: #fff;
+    width: 463px;
+height: 245px;
+border-radius: 20px;
+
+background-image:url(../img/game-development.png), url(../img/sword.png), url(../img/puzzle.png), url(../img/tic-tac-toe.png);
+background-repeat: no-repeat;
+background-position: 
+right 43px bottom 140px,
+left 43px bottom 146px,
+left 70px bottom 83px,  
+right 70px bottom 83px;
+
+}
+
+.modal-close-footer{
+margin-left: auto;
+display: block;
+border: none;
+background-color: transparent;
+}
+
+.modal-text-footer{
+    font-family: var(--second-family);
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #000;
+margin-top: 38px;
 }

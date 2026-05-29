@@ -1,3 +1,6 @@
+import light from "../img/Sun-btn.png"
+import dark from "../img/Moon-btn.png"
+
 const games = [
   {
     id: 1,
@@ -68,5 +71,29 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 });
 })
+const btn = document.querySelector('.background-change');
+const icon = document.querySelector('.background-sun-icon');
+const sections = document.querySelectorAll(".section")
 
+console.log(icon)
+btn.addEventListener('click', () => {
+  btn.classList.toggle('background-change-dark');
+  console.log(icon)
+
+  if (btn.classList.contains('background-change-dark')) {
+    console.log(icon);
+    icon.style.display = "none"
+    
+    sections.forEach(section => section.style.backgroundColor = 'gray');
+
+
+  } else {
+    sections.forEach(section => (section.style.backgroundColor = 'white'));
+    // icon.src = "../img/Sun-btn.png";
+  }
+  // btn.classList.contains('background-change-dark')
+  //   ? icon.setAttribute('src', dark)
+  //   : icon.setAttribute("src", light);
+  
+});
 
